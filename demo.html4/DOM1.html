@@ -1,3 +1,4 @@
+<!-- designing <code></code> -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,10 @@
         <h1 id="second" class="title">Welcome to DOM examples</h1>
         <p>This is a simple HTML document demonstrating the Document Object Model (DOM).</p>
     </div>
+    <button id ="myBTN"> Click me !</button>
 
+
+<!-- javascript code -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             // Get element by ID
@@ -32,16 +36,13 @@
             allContainers.forEach(element => {
                 element.style.backgroundColor = "lightgrey";
             });
-        });
-
-        let button = document.getElementById
-        ("myBtn");
-        button.addEventListener("click",()=>{
-            alert("Button Clicked!");
-        });
+            let button = document.getElementById("myBTN");
+            button. addEventListener("click",()=>{
+                alert("Button clicked!");
+            });
+        });// javascript code
+       
+        
     </script>
-
-    <button id ="myBtn">Click Me!</button>
 </body>
-
 </html>
